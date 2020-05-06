@@ -120,7 +120,7 @@ class Controller_Members extends Admin_Controller
 
 		        	$update = $this->model_users->edit($data, $id, $this->input->post('groups'));
 		        	if($update == true) {
-		        		$this->session->set_flashdata('success', 'Успешно создано');
+		        		$this->session->set_flashdata('success', 'Added successfully ');
 		        		redirect('Controller_Members/', 'refresh');
 		        	}
 		        	else {
@@ -148,7 +148,7 @@ class Controller_Members extends Admin_Controller
 
 			        	$update = $this->model_users->edit($data, $id, $this->input->post('groups'));
 			        	if($update == true) {
-			        		$this->session->set_flashdata('success', 'Успешно обновлено');
+			        		$this->session->set_flashdata('success', 'Updated successfully ');
 			        		redirect('Controller_Members/', 'refresh');
 			        	}
 			        	else {
@@ -259,7 +259,7 @@ class Controller_Members extends Admin_Controller
 
 		        	$update = $this->model_users->edit($data, $id);
 		        	if($update == true) {
-		        		$this->session->set_flashdata('success', 'Успешно обновлено');
+		        		$this->session->set_flashdata('success', 'Updated successfully ');
 		        		redirect('Controller_Members/setting/', 'refresh');
 		        	}
 		        	else {
@@ -287,7 +287,7 @@ class Controller_Members extends Admin_Controller
 
 			        	$update = $this->model_users->edit($data, $id, $this->input->post('groups'));
 			        	if($update == true) {
-			        		$this->session->set_flashdata('success', 'Успешно обновлено');
+			        		$this->session->set_flashdata('success', 'Updated successfully ');
 			        		redirect('Controller_Members/setting/', 'refresh');
 			        	}
 			        	else {

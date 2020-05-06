@@ -106,7 +106,7 @@ class Controller_Orders extends Admin_Controller
         	$order_id = $this->model_orders->create();
         	
         	if($order_id) {
-        		$this->session->set_flashdata('success', 'Успешно создано');
+        		$this->session->set_flashdata('success', 'Added successfully ');
         		redirect('Controller_Orders/update/'.$order_id, 'refresh');
         	}
         	else {
@@ -177,7 +177,7 @@ class Controller_Orders extends Admin_Controller
         	$update = $this->model_orders->update($id);
         	
         	if($update == true) {
-        		$this->session->set_flashdata('success', 'Успешно обновлено');
+        		$this->session->set_flashdata('success', 'Updated successfully ');
         		redirect('Controller_Orders/update/'.$id, 'refresh');
         	}
         	else {
@@ -227,7 +227,7 @@ class Controller_Orders extends Admin_Controller
             $delete = $this->model_orders->remove($order_id);
             if($delete == true) {
                 $response['success'] = true;
-                $response['messages'] = "Успешно удалено"; 
+                $response['messages'] = "Deleted successfully "; 
             }
             else {
                 $response['success'] = false;

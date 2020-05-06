@@ -123,7 +123,7 @@ class Controller_Products extends Admin_Controller
 
         	$create = $this->model_products->create($data);
         	if($create == true) {
-        		$this->session->set_flashdata('success', 'Успешно создано');
+        		$this->session->set_flashdata('success', 'Added successfully ');
         		redirect('Controller_Products/', 'refresh');
         	}
         	else {
@@ -235,7 +235,7 @@ class Controller_Products extends Admin_Controller
 
             $update = $this->model_products->update($data, $product_id);
             if($update == true) {
-                $this->session->set_flashdata('success', 'Успешно обновлено');
+                $this->session->set_flashdata('success', 'Updated successfully ');
                 redirect('Controller_Products/', 'refresh');
             }
             else {
@@ -285,7 +285,7 @@ class Controller_Products extends Admin_Controller
             $delete = $this->model_products->remove($product_id);
             if($delete == true) {
                 $response['success'] = true;
-                $response['messages'] = "Успешно удалено»"; 
+                $response['messages'] = "Deleted successfully "; 
             }
             else {
                 $response['success'] = false;

@@ -56,7 +56,7 @@ class Controller_Permission extends Admin_Controller
 
         	$create = $this->model_groups->create($data);
         	if($create == true) {
-        		$this->session->set_flashdata('success', 'Успешно создано');
+        		$this->session->set_flashdata('success', 'Added successfully ');
         		redirect('Controller_Permission/', 'refresh');
         	}
         	else {
@@ -97,7 +97,7 @@ class Controller_Permission extends Admin_Controller
 
 	        	$update = $this->model_groups->edit($data, $id);
 	        	if($update == true) {
-	        		$this->session->set_flashdata('success', 'Успешно обновлено');
+	        		$this->session->set_flashdata('success', 'Updated successfully ');
 	        		redirect('Controller_Permission/', 'refresh');
 	        	}
 	        	else {

@@ -157,7 +157,7 @@ class Controller_Items extends Admin_Controller
 	        	$update = $this->model_brands->update($data, $id);
 	        	if($update == true) {
 	        		$response['success'] = true;
-	        		$response['messages'] = 'Успешно обновлено';
+	        		$response['messages'] = 'Updated successfully ';
 	        	}
 	        	else {
 	        		$response['success'] = false;

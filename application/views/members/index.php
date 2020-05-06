@@ -33,7 +33,7 @@
           <?php endif; ?>
           
           <?php if(in_array('createUser', $user_permission)): ?>
-            <a href="<?php echo base_url('Controller_Members/create') ?>" class="btn btn-primary">Добавить новое</a>
+            <a href="<?php echo base_url('Controller_Members/create') ?>" class="btn btn-primary">Add new user</a>
             <br /> <br />
           <?php endif; ?>
 

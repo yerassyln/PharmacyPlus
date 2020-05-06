@@ -95,11 +95,11 @@ class Controller_Element extends Admin_Controller
         	$create = $this->model_attributes->create($data);
         	if($create == true) {
         		$response['success'] = true;
-        		$response['messages'] = 'Успешно создано';
+        		$response['messages'] = 'Added successfully ';
         	}
         	else {
         		$response['success'] = false;
-        		$response['messages'] = 'Ошибка to базе данных при создании информации о бренде';			
+        		$response['messages'] = 'Error in Database while creating information';			
         	}
         }
         else {
@@ -138,7 +138,7 @@ class Controller_Element extends Admin_Controller
 	        	$update = $this->model_attributes->update($data, $id);
 	        	if($update == true) {
 	        		$response['success'] = true;
-	        		$response['messages'] = 'Успешно обновлено';
+	        		$response['messages'] = 'Updated successfully ';
 	        	}
 	        	else {
 	        		$response['success'] = false;
@@ -176,7 +176,7 @@ class Controller_Element extends Admin_Controller
 			$delete = $this->model_attributes->remove($attribute_id);
 			if($delete == true) {
 				$response['success'] = true;
-				$response['messages'] = "Успешно удалено»";	
+				$response['messages'] = "Deleted successfully ";	
 			}
 			else {
 				$response['success'] = false;
@@ -267,7 +267,7 @@ class Controller_Element extends Admin_Controller
         	$create = $this->model_attributes->createValue($data);
         	if($create == true) {
         		$response['success'] = true;
-        		$response['messages'] = 'Успешно создано';
+        		$response['messages'] = 'Added successfully ';
         	}
         	else {
         		$response['success'] = false;
@@ -307,7 +307,7 @@ class Controller_Element extends Admin_Controller
 	        	$update = $this->model_attributes->updateValue($data, $id);
 	        	if($update == true) {
 	        		$response['success'] = true;
-	        		$response['messages'] = 'Успешно обновлено';
+	        		$response['messages'] = 'Updated successfully ';
 	        	}
 	        	else {
 	        		$response['success'] = false;
@@ -342,7 +342,7 @@ class Controller_Element extends Admin_Controller
 			$delete = $this->model_attributes->removeValue($attribute_value_id);
 			if($delete == true) {
 				$response['success'] = true;
-				$response['messages'] = "Успешно удалено";	
+				$response['messages'] = "Deleted successfully ";	
 			}
 			else {
 				$response['success'] = false;

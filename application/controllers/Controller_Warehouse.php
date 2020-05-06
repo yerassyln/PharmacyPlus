@@ -102,7 +102,7 @@ class Controller_Warehouse extends Admin_Controller
         	$create = $this->model_stores->create($data);
         	if($create == true) {
         		$response['success'] = true;
-        		$response['messages'] = 'Успешно создано';
+        		$response['messages'] = 'Added successfully ';
         	}
         	else {
         		$response['success'] = false;
@@ -147,7 +147,7 @@ class Controller_Warehouse extends Admin_Controller
 	        	$update = $this->model_stores->update($data, $id);
 	        	if($update == true) {
 	        		$response['success'] = true;
-	        		$response['messages'] = 'Успешно обновлено';
+	        		$response['messages'] = 'Updated successfully ';
 	        	}
 	        	else {
 	        		$response['success'] = false;
@@ -188,7 +188,7 @@ class Controller_Warehouse extends Admin_Controller
 			$delete = $this->model_stores->remove($store_id);
 			if($delete == true) {
 				$response['success'] = true;
-				$response['messages'] = "Успешно удалено»";	
+				$response['messages'] = "Deleted successfully ";	
 			}
 			else {
 				$response['success'] = false;
